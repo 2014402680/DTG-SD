@@ -1,0 +1,6 @@
+2025/09/02 18:50:31: [ Using device: cuda:0 ]
+2025/09/02 18:50:31: [ Loading few-shot data splits... ]
+2025/09/02 18:50:31: [ Loading graph data... ]
+2025/09/02 18:50:32: [ Graph 0 loaded. Nodes: 100000, Classes: 2 ]
+2025/09/02 18:50:32: [ ===== Starting Fold 1/10 for Graph 0 ===== ]
+2025/09/02 18:50:33: [ Pre-trained model loaded. ]
