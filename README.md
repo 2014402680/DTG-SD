@@ -14,8 +14,6 @@ distribution of ST but also aligns with the geometric structure of ST's embeddin
 space through interactive prototype generation and teacher-guided calibration. Unlike
 traditional imitation-based distillation, this approach promotes sufficient and
 interpretable knowledge transfer via teacher–student interactive structural alignment, resulting in more generalizable and discriminative task representations.
-## Datasets
-Our experiments were conducted on two public data sets: Luo’s data [1] and Zheng’s data [2], which include various drug associations. We provide all the data for these two datasets at MGPT/get_nodefeature_module/data
 
 ## Requirements
 
@@ -38,7 +36,7 @@ torch = 1.12.1
 │   │   ├── zheng                         # Zheng’s data
 │   ├── prompt_embedding                  # Stored hint vectors
 │   ├── pretrain.py                       # Model pre-training
-│   ├── run.py                            # training code for prompting
+│   ├── run.py                            # training code 
 
 ```
 
@@ -53,13 +51,9 @@ Take the Zheng’s dataset for example.
 ```
 ./prompt_module/pretrain.py
 ```
-3. Sub-graph Representation:
+3. Sub-graph Representation(Pre-trained weights are saved; you can run this directly):
 ```
 ./prompt_module/run.py
 ```
 
-## References
-```
-[1] Luo, Y., Zhao, X., Zhou, J., Yang, J., Zhang, Y., Kuang, W., Peng, J., Chen, L., Zeng, J.: A network integration approach for drug-target interaction prediction and computational drug repositioning from heterogeneous information. Nature communications 8(1), 573 (2017)
-[2] Zheng, Y., Peng, H., Zhang, X., Gao, X., Li, J.: Predicting drug targets from heterogeneous spaces using anchor graph hashing and ensemble learning. In: 2018 International Joint Conference on Neural Networks (IJCNN), pp. 1–7 (2018). IEEE
-```
+
